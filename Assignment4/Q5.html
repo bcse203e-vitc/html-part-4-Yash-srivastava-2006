@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Order Form</title>
+</head>
+<body>
+
+    <h2>Product Order Form</h2>
+
+    <form action="submit_order.html" method="POST">
+        
+        <label for="name">Customer Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" required></textarea><br><br>
+
+        
+        <label for="product">Select Product:</label><br>
+        <select id="product" name="product" required>
+          <option value="">Select your product</option>
+            <option value="product1" data-price="50">Product 1 - rs. 50</option>
+            <option value="product2" data-price="100">Product 2 - rs. 100</option>
+            <option value="product3" data-price="150">Product 3 - rs. 150</option>
+        </select><br><br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" value="1" min="1" required><br><br>
+
+      
+        <label><input type="radio" name="delivery" value="standard" required> Standard Delivery</label><br>
+        <label><input type="radio" name="delivery" value="express" required> Express Delivery</label><br><br>
+
+        
+        <label for="coupon">Coupon Code:</label><br>
+        <input type="text" id="coupon" name="coupon"><br><br>
+        <button type="button" id="applyCouponButton">Apply Coupon</button><br><br>
+
+        
+        <label for="totalPrice">Total Price:</label><br>
+        <input type="text" id="totalPrice" name="totalPrice" readonly><br><br>
+
+      
+        <button type="submit">Submit Order</button>
+    </form>
+
+</body>
+</html>
