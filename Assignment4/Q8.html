@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Submission Form</title>
+</head>
+<body>
+
+    <h2>Online Quiz Submission</h2>
+
+    <form action="submit_quiz.html" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <h3>Questions</h3>
+        
+        <label>1. What is the capital of India?</label><br>
+        <label><input type="radio" name="q1" value="paris" required> Paris</label><br>
+        <label><input type="radio" name="q1" value="london"> London</label><br>
+        <label><input type="radio" name="q1" value="Delhi"> Delhi</label><br><br>
+
+        <label>2. Which of the following are programming languages? (Select all that apply)</label><br>
+        <label><input type="checkbox" name="q2" value="python"> Python</label><br>
+        <label><input type="checkbox" name="q2" value="java"> Java</label><br>
+        <label><input type="checkbox" name="q2" value="html"> HTML</label><br>
+        <label><input type="checkbox" name="q2" value="css"> CSS</label><br><br>
+
+        <label>3. What is 2 + 2?</label><br>
+        <label><input type="radio" name="q3" value="3" required> 3</label><br>
+        <label><input type="radio" name="q3" value="4"> 4</label><br>
+        <label><input type="radio" name="q3" value="5"> 5</label><br><br>
+
+        <h3>Timer</h3>
+        <label for="timer">Remaining Time:</label><br>
+        <input type="text" id="timer" name="timer" value="00:30" readonly placeholder="Time Remaining: 30 seconds"><br><br>
+
+        <button type="submit">Submit Quiz</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Survey Form</title>
+</head>
+<body>
+
+    <h2>Health Survey Form</h2>
+
+    <form action="submit_survey.html" method="POST">
+        
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="1" required><br><br>
+
+        
+        <label>Gender:</label><br>
+        <label><input type="radio" name="gender" value="male" required> Male</label><br>
+        <label><input type="radio" name="gender" value="female" required> Female</label><br>
+        <label><input type="radio" name="gender" value="other" required> Other</label><br><br>
+
+      
+        <label for="height">Height (in cm):</label><br>
+        <input type="number" id="height" name="height" min="1" required><br><br>
+
+        
+        <label for="weight">Weight (in kg):</label><br>
+        <input type="number" id="weight" name="weight" min="1" required><br><br>
+
+        
+        <label for="dietary">Dietary Preference:</label><br>
+        <select id="dietary" name="dietary" required>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="non-vegetarian">Non-Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="pescatarian">Pescatarian</option>
+        </select><br><br>
+
+        
+        <label for="activity">Activity Level:</label><br>
+        <select id="activity" name="activity" required>
+            <option value="sedentary">Sedentary</option>
+            <option value="moderate">Moderate</option>
+            <option value="active">Active</option>
+        </select><br><br>
+
+        
+        <label>Do you have any of the following lifestyle habits?</label><br>
+        <label><input type="checkbox" name="lifestyle" value="smoking"> Smoking</label><br>
+        <label><input type="checkbox" name="lifestyle" value="alcohol"> Less sleep</label><br>
+        <label><input type="checkbox" name="lifestyle" value="exercise"> Regular Exercise</label><br>
+        <label><input type="checkbox" name="lifestyle" value="fast_food"> Eating Fast Food</label><br><br>
+
+        
+        <button type="submit">Submit Survey</button>
+    </form>
+
+</body>
+</html>
